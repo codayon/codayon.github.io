@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Codayon's Goofy Ahh Portfolio</title>
+    <style>
+      :root {
+        --main-color: #ff69b4;
+        --bg-color: #0f0f0f;
+        --text-color: #ffffff;
+        --accent-color: #39ff14;
+      }
+      body {
+        margin: 0;
+        font-family: "Comic Sans MS", cursive, sans-serif;
+        background-color: var(--bg-color);
+        color: var(--text-color);
+        overflow-x: hidden;
+      }
+      header {
+        background-color: var(--main-color);
+        padding: 2rem;
+        text-align: center;
+        animation: wiggle 5s infinite;
+      }
+      header h1 {
+        font-size: 3rem;
+        color: var(--bg-color);
+      }
+      nav {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        background-color: var(--accent-color);
+        padding: 1rem;
+      }
+      nav a {
+        color: var(--bg-color);
+        text-decoration: none;
+        font-weight: bold;
+      }
+      section {
+        padding: 2rem;
+        max-width: 800px;
+        margin: auto;
+      }
+      .project {
+        background: #222;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        border: 2px dashed var(--accent-color);
+        border-radius: 1rem;
+        transition: transform 0.3s;
+      }
+      .project:hover {
+        transform: rotate(2deg) scale(1.05);
+      }
+      footer {
+        text-align: center;
+        padding: 2rem;
+        background: var(--main-color);
+        color: var(--bg-color);
+      }
+      @keyframes wiggle {
+        0% {
+          transform: rotate(0deg);
+        }
+        25% {
+          transform: rotate(2deg);
+        }
+        50% {
+          transform: rotate(-2deg);
+        }
+        75% {
+          transform: rotate(2deg);
+        }
+        100% {
+          transform: rotate(0deg);
+        }
+      }
+      .goofy-button {
+        background-color: var(--accent-color);
+        border: none;
+        padding: 1rem 2rem;
+        font-size: 1.2rem;
+        cursor: pointer;
+        border-radius: 1rem;
+        transition: transform 0.3s;
+      }
+      .goofy-button:hover {
+        transform: scale(1.2) rotate(-10deg);
+      }
+      @media screen and (max-width: 600px) {
+        header h1 {
+          font-size: 2rem;
+        }
+        .goofy-button {
+          font-size: 1rem;
+          padding: 0.8rem 1.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to Codayon's Goofy Ahh Portfolio</h1>
+    </header>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        Yo it's ya boi <strong>codayon</strong>, coding like it's a meme,
+        debugging like a dream 💻✨
+      </p>
+      <button class="goofy-button" onclick="alert('boing!')">
+        Click me I'm goofy
+      </button>
+    </section>
+    <section id="projects">
+      <h2>My Fire Projects 🔥</h2>
+      <div class="project">
+        <h3>Goofy Calculator</h3>
+        <p>
+          A calculator that screams when you divide by zero. Math has never been
+          this dramatic.
+        </p>
+      </div>
+      <div class="project">
+        <h3>Meme Generator 3000</h3>
+        <p>Turn boring quotes into meme masterpieces with one click.</p>
+      </div>
+    </section>
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p>
+        Slide into my DMs on
+        <a href="https://github.com/codayon" target="_blank">GitHub</a>
+      </p>
+    </section>
+    <footer>
+      <p>&copy; 2025 codayon. Made with vibes and zero sleep.</p>
+    </footer>
+  </body>
+</html>
